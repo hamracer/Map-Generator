@@ -6,7 +6,7 @@ height = 1440
 
 # fad53df832j5n 3840, 2160, 25000, 5 Big central sea.
 
-gen = Generator(height, width, 25000, seed="56htncfhdr'##43", regularity=5)
+gen = Generator(height, width, 25000, seed=None, regularity=5)
 
 # canvas = MapCanvasBasic(height, width)
 canvas = MapCanvas(height, width)
