@@ -222,17 +222,17 @@ class MapCanvas:
         self.draw = aggdraw.Draw(self.image)
 
     def load_assets(self):
-        self.parchment = Image.open("assets/parchment.jpg").convert("RGBA").resize((self.width, self.height),
+        self.parchment = Image.open("map_gen_2/assets/parchment.jpg").convert("RGBA").resize((self.width, self.height),
                                                                                    Image.ANTIALIAS)
-        for im in os.listdir("assets/mountains/"):
+        for im in os.listdir("map_gen_2/assets/mountains/"):
             self.mountain.append(
-                Image.open("assets/mountains/" + im).resize((40, 25), Image.ANTIALIAS))
+                Image.open("map_gen_2/assets/mountains/" + im).resize((40, 25), Image.ANTIALIAS))
 
-        for im in os.listdir("assets/trees/"):
-            self.tree.append(Image.open("assets/trees/" + im).resize((5, 8), Image.ANTIALIAS))
+        for im in os.listdir("map_gen_2/assets/trees/"):
+            self.tree.append(Image.open("map_gen_2/assets/trees/" + im).resize((5, 8), Image.ANTIALIAS))
 
-        for im in os.listdir("assets/hills/"):
-            self.hill.append(Image.open("assets/hills/" + im).resize((20, 13), Image.ANTIALIAS))
+        for im in os.listdir("map_gen_2/assets/hills/"):
+            self.hill.append(Image.open("map_gen_2/assets/hills/" + im).resize((20, 13), Image.ANTIALIAS))
 
     def show_map(self):
         self.image.show()
